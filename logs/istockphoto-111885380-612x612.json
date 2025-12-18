@@ -1,0 +1,15 @@
+{
+    "filename": "istockphoto-111885380-612x612.jpg",
+    "detections": [
+        {
+            "label": "gloved_hand",
+            "confidence": 0.82,
+            "bbox": [
+                179,
+                140,
+                488,
+                323
+            ]
+        }
+    ]
+}

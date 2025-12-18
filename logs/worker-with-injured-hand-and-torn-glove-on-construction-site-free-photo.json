@@ -1,0 +1,25 @@
+{
+    "filename": "worker-with-injured-hand-and-torn-glove-on-construction-site-free-photo.jpg",
+    "detections": [
+        {
+            "label": "bare_hand",
+            "confidence": 0.75,
+            "bbox": [
+                293,
+                146,
+                494,
+                345
+            ]
+        },
+        {
+            "label": "gloved_hand",
+            "confidence": 0.57,
+            "bbox": [
+                139,
+                41,
+                382,
+                260
+            ]
+        }
+    ]
+}

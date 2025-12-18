@@ -1,0 +1,6 @@
+path: /content/drive/MyDrive/Colab Notebooks/Part_1_Glove_Detection
+train: train/images
+val: valid/images
+names:
+  0: gloved_hand
+  1: bare_hand
