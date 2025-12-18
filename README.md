@@ -7,11 +7,15 @@ compliance use case** in industrial environments, where monitoring glove usage
 is critical. The pipeline covers data preparation, model training, validation,
 inference, and structured result logging.
 
+<a href="https://colab.research.google.com/drive/1jFPQHuZv-kUOrwqdie1ldFyDJjLjW8y3?usp=sharing" target="_blank">
+  <img src="https://img.shields.io/badge/Open%20in-Colab-F9AB00?logo=googlecolab&logoColor=white" alt="Open in Colab"/>
+</a>
+
 ---
 
 ## 📂 Dataset
 
-**Dataset Name:** Custom Glove Detection Dataset  
+**Dataset Name:** Glove Computer Vision Dataset 
 **Source:**  
 - Roboflow Universe (hand / PPE datasets)  
 - Manual filtering and organization  
@@ -25,7 +29,7 @@ inference, and structured result logging.
 - Dataset split into:
   - `train/`
   - `valid/`
-  - `test/`
+  - `test/` dataset is created 
 
 Only images with corresponding label files are used during training and
 validation, following YOLO’s standard practice.
@@ -53,6 +57,7 @@ classes in the original dataset.
 
 ### Training
 - Fine-tuned YOLOv8 using transfer learning
+- data.yml file created
 - Trained for multiple epochs
 - Data augmentation applied to improve robustness and recall:
   - HSV color jitter (lighting variations)
@@ -93,10 +98,10 @@ test images.
 ### JSON Log Format
 ```json
 {
-  "filename": "image1.jpg",
+  "filename": "image_name.jpg",
   "detections": [
     {
-      "label": "gloved_hand",
+      "label": "gloved_hand or bare_hand",
       "confidence": 0.92,
       "bbox": [x1, y1, x2, y2]
     }
